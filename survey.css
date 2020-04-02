@@ -1,0 +1,230 @@
+body {
+  color: #484848;
+  width: 700px;
+  max-width: inherit;
+  padding: 10px 20px;
+  background: #f4f7f8;
+  margin: 10px auto;
+  padding: 15px;
+  border-radius: 8px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+#title {
+  color: white;
+  text-align: center;
+  font-size: 34px;
+  background-color: #4CAF50;
+  padding: 10px 10px 10px 10px;
+}
+
+}
+
+#survey-form {
+  font-size: 0.9em;
+  margin-bottom: 10px;
+  border: none;
+}
+
+legend {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #009900;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+
+
+input[type=name] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: white;
+  -webkit-appearance: menulist-button;
+  height:35px;
+  }
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  resize: none;
+  }
+
+  input[type="name"],
+  input[type="email"],
+  input[type="number"],
+  textarea,
+  select {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    background: rgba(255,255,255,.1);
+    border: none;
+    border-radius: 4px;
+    font-size: 15px;
+    margin-top: 20px;
+    outline: 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    background-color: #e8eeef;
+    color:#8a97a0;
+    -webkit-box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+    margin-bottom: 30px;
+  }
+
+  input[type="name"]:focus,
+  input[type="email"]:focus,
+  input[type="number"]:focus,
+  textarea:focus,
+  select:focus{
+    background: #d2d9dd;
+  }
+
+.number {
+  background: #4CAF50;
+  color: #fff;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  font-size: 18px;
+  margin-right: 4px;
+  line-height: 30px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255,255,255,0.2);
+  border-radius: 15px 15px 15px 0px;
+}
+
+input[type=checkbox] + label {
+  display: block;
+  margin: 0.2em;
+  cursor: pointer;
+  padding: 0.2em;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+input[type=checkbox] + label:before {
+  content: "\2714";
+  border: 0.1em solid #000;
+  border-radius: 0.2em;
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  padding-left: 0.2em;
+  padding-bottom: 0.3em;
+  margin-right: 0.2em;
+  vertical-align: bottom;
+  color: transparent;
+  transition: .2s;
+}
+
+input[type=checkbox] + label:active:before {
+  transform: scale(0);
+}
+
+input[type=checkbox]:checked + label:before {
+  background-color: MediumSeaGreen;
+  border-color: MediumSeaGreen;
+  color: #fff;
+}
+
+input[type=checkbox]:disabled + label:before {
+  transform: scale(1);
+  border-color: #aaa;
+}
+
+input[type=checkbox]:checked:disabled + label:before {
+  transform: scale(1);
+  background-color: #bfb;
+  border-color: #bfb;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 95px;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  cursor: pointer;
+  font-size: 17px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 55px;
+  height: 20px;
+  width: 20px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+background-color: #333333;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+.container .checkmark:after {
+left: 4.5px;
+top: 3px;
+width: 5px;
+height: 10px;
+border: solid white;
+border-width: 0 3px 3px 0;
+-webkit-transform: rotate(45deg);
+-ms-transform: rotate(45deg);
+transform: rotate(45deg);
+}
+
+input[type=submit] {
+position: relative;
+display: block;
+padding: 19px 39px 18px 39px;
+color: white;
+margin: 0 auto;
+background: #4CAF50;
+font-size: 18px;
+text-align: center;
+font-style: normal;
+width: 100%;
+border: 1px solid #4CAF50;
+border-width: 1px 1px 3px;
+margin-bottom: 10px;
+}

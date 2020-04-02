@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link href="css/survey.css" type="text/css" rel="stylesheet">
+  </head>
+  <body>
+    <h1 id="title">A Survey on Memes</h1>
+    <p id="description">
+      A Meme (n): an image, video, piece of text, etc., typically humorous in nature, that is copied and spread rapidly by Internet users, often with slight variations.
+    </p><br>
+    <form id="survey-form">
+      <legend><span class="number">1</span> Name</legend>
+      <label id="name-label">Name</label>
+      <input type="name" id="name" name="name" placeholder="First name"required>
+      <input type="name" id="name" name="name" placeholder="Last name"><br><br>
+
+      <legend><span class="number">2</span> Email</legend>
+      <label id="email-label">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required><br><br>
+
+      <legend><span class="number">3</span>Age</legend>
+      <label id="number-label">Age</label>
+      <input type="number" id="number" name="age"  min="16" max="99" placeholder="What's your age?"required><br>
+
+      <legend><span class="number">4</span>   How familiar are you with memes?</legend>
+      <select id="dropdown" name="familiarity">
+        <option value="pick-one-option">choose an option</option>
+        <option value="not-farmiliar">Not familiar</option>
+        <option value="vaguely-familiar">Vaguely familiar</option>
+        <option value="somewhat-familiar">Somewhat familiar</option>
+        <option value="very-familiar">Very familiar</option>
+      </select>
+
+      <legend><span class="number">5</span> Do you enjoy looking at memes?</legend>
+
+        <label for="hate" class="container">
+          <input type="radio" id="hate" name="love-hate" value="hate">
+          <span class="checkmark"></span>
+          I hate memes</label><br>
+        <label for="somewhat-enjoy" class="container">
+          <input type="radio" id="somewhat-enjoy" name="love-hate" value="somewhat-enjoy">
+          <span class="checkmark"></span>
+          I somewhat enjoy memes</label><br>
+        <label for="love" class="container">
+          <input type="radio" id="love" name="love-hate" value="love">
+          <span class="checkmark"></span>
+          I love memes</label>
+
+      <legend><span class="number">6</span> What social media platforms do you view memes on?</legend>
+      <input type="checkbox" id="platform1" name="platform1" value="Instagram">
+      <label for="platform1"> Instagram</label><br>
+      <input type="checkbox" id="platform2" name="platform2" value="Whatsapp">
+      <label for="platform2"> Whatsapp</label><br>
+      <input type="checkbox" id="platform3" name="platform3" value="Twitter">
+      <label for="platform3"> Twitter</label><br>
+      <input type="checkbox" id="platform4" name="platform4" value="Snapchat">
+      <label for="platform4"> Snapchat</label><br>
+      <input type="checkbox" id="platform5" name="platform5" value="TikTok">
+      <label for="platform5"> TikTok</label><br>
+      <input type="checkbox" id="platform6" name="platform6" value="Other">
+      <label for="platform6"> Other</label><br>
+
+      <legend><span class="number">8</span> Do you believe memes have a strong impact on society?</legend>
+      <label for="disagree" class="container">
+        <input type="radio" id="disagree" name="memes-impact" value="no">
+        <span class="checkmark"></span>
+        Memes don't affect society at all</label><br>
+      <label for="sometimes" class="container">
+        <input type="radio" id="sometimes" name="memes-impact" value="sometimes">
+        <span class="checkmark"></span>
+        Memes sometimes can chabge society</label><br>
+      <label for="agree" class="container">
+        <input type="radio" id="agree" name="memes-impact" value="yes">
+        <span class="checkmark"></span>
+        Memes shape society into what it is today</label>
+
+      <label for="comments"></label> <textarea name="comments" id="comments" cols="30" rows="3" placeholder="Leave a comment!"></textarea><br><br>
+      <input id="submit" type="submit" value="Submit">
+    </form>
+  </body>
+</html>
